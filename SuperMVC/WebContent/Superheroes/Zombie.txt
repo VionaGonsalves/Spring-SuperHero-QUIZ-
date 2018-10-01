@@ -1,0 +1,67 @@
+Questions X 10
+Random options
+
+Super Heroes
+- SpiderMan	
+- SuperMan	
+- IronMan	
+- BatMan	
+- DeadPool	
+- Black panther
+- Hulk
+
+Params: 
+SP,IM,BM- Do you like to tinker with technology?
+- In a Zombie apocalypse which weapon would you choose?
+  [Sword (DP), Laser(SM), Blaster(IM), Claws(BP), Other]
+DP,SP,IM- Does Humour excite you?
+- How Agressive you get when offended?
+  [High(HK,BM), Moderate(DP), Low]
+Nan- Are you a day dreamer?
+- How you spent your weekend?
+	[Clubbing, Reading a Book (BP,SP,SM,HK)]
+- Pick a color? (
+  > Red(SP,SM,DP,IM)
+  > black(BM,BP,DP)
+  > blue(SM,SP)
+  > gold(IM)
+  > green(HK)
+- What would you do on a cold evening?
+	[Hit the gym(HK,BP,SM,BM), Netflix n Chill]
+- Where would you go to pass time?
+	[Shopping, Comic-con(SP,HK)]
+- What would you like to play?
+	[Bowling, Football(HK,BP)]
+- Describe your current lifestyle?
+  > Rich (IM,BP,BM)
+  > Normal (SP,HK,SM)
+  > Broke (DP)
+- Do you like to have enhanced abilities?
+	[Yes but Natrual(SM), Yes for Mutated(HK,DP,SP), No! I'm good]
+- Your greatest fear (Tie-breaker)
+  > Loosing temper (HK)
+  > Imperfection (IM)
+  > Clowns (DP)
+  > Loosing your people (BP)
+  > Becoming own enemy (SM)
+  > Inability to protecte loved ones (BM)
+  > None (SP)
+
+Database Tables
+users
+ - email	Varchar2(30)
+ - password	Varchar2(15)
+ - answer	varchar2(15)
+ - code		varchar2(5)
+
+quiz
+ - qid		number(3)
+ - question	varchar2(100)
+
+answer
+ - qid		number(3)
+ - option	varchar2(50)
+
+result
+ - code		varchar2(5)
+ - hero		varchar2(30)
